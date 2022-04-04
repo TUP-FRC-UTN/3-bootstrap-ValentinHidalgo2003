@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzeria</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="imagenes/logo-pizzeria.jpg"
+            alt=""
+            width="100px"
+            height="100px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toogle navigation"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+            <li class="navbar-item">
+              <a class="nav-link" href="#">Sobre Nosotros</a>
+            </li>
+            <li class="navbar-item"><a class="nav-link" href="#">Menu</a></li>
+            <li class="navbar-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CARRUSEL -->
+
+    <div class="carousel slide" id="mainSlider" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/1carrusel.jpg" alt="" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/2carrusel.jpg" alt="" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/3carrusel.jpg" alt="" class="d-block w-100" />
+        </div>
+      </div>
+    </div>
+
+    <!-- RIBBON -->
+
+    <div id="ribbon" class="container-fluid">
+      <div id="birthday" class="container w-50 pl-5 rounded-lg">
+        <div class="row-align-items-center">
+          <div class="col-sm p-3">
+            <img src="imagenes/Ribbon1.jpg" class="w-75 mx-auto d-block" alt=""/
+            >
+          </div>
+          <div class="col-sm p-3 text-light text-center">
+            <p class="text-warning h3">Esta es nuestra:</p>
+            <h4>Pizza calabresa</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEPARADOR RIBBON -->
+
+    <div id="separator-ribbon">
+      <div class="content bg-warning"></div>
+    </div>
+
+    <!-- CONTACTO  -->
+    <div id="contacto">
+      <div class="container-md p-5 "  id="games" >
+        <div class="row pt-5">
+          <h3 class="text-center pb-5 pt-5 h1">Sobre Nosotros</h3>
+        </div>
+
+        <div class="row ">
+          <div class="col-sm">
+            <div class="card w-100 card-border mb-5" >
+              <img src="imagenes/logo-pizzeria.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Contactanos</h5>
+                <p class="card-text">
+                  Contamos con Instagram
+                </p>
+                <a href="https://instagram.com/pizzeriapopularrn?utm_medium=copy_link" class="btn btn-primary" target="_blank">Nuestro contacto</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card w-100 card-border mb-5" >
+              <img src="imagenes/logo-pizzeria.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Trayectoria</h5>
+                <p class="card-text">
+                  Nuestro primer local fue en 1980
+                 
+                </p>
+                <a href="https://instagram.com/pizzeriapopularrn?utm_medium=copy_link" class="btn btn-primary" target="_blank">Nuestro contacto</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card w-100 card-border mb-5" >
+              <img src="imagenes/logo-pizzeria.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Gerente</h5>
+                <p class="card-text">
+                  Valentin Hidalgo 
+                </p>
+                <a href="https://instagram.com/pizzeriapopularrn?utm_medium=copy_link" class="btn btn-primary" target="_blank">Nuestro contacto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+    <form class="needs-validation container-fluid" id="form" novalidate>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="consulta" style="color: white;">Diga su consulta, y nos pondremos en contacto</label> <br> <br>
+          <label for="nombre" style="color: white;">Nombre</label>
+          <input type="text" class="form-control" id="validationTooltip01" placeholder="Ingrese su Nombre" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validationTooltip02" style="color: white;">Apellido</label>
+          <input type="text" class="form-control" id="validationTooltip02" placeholder="Ingrese su Apellido" required>
+          <div class="valid-tooltip">
+            Muy bien!
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationTooltip03" style="color: white;">Ciudad</label>
+          <input type="text" class="form-control" id="validationTooltip03" required>
+          <div class="invalid-tooltip">
+            Ingrese una ciudad valida.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationTooltip04" style="color: white;">Provincia</label>
+          <select class="custom-select" id="validationTooltip04" required>
+            <option selected disabled value="">Provincia...</option>
+            <option>
+                <option value="Cordoba">Cordoba</option> 
+                <option value="bsas">Buenos Aires</option> 
+                <option value="mendoza">Mendoza</option>
+                <option value="tucuman"> tucuman</option>
+
+            </option>
+          </select>
+          <div class="invalid-tooltip">
+            Seleccione una provincia valida.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationTooltip05" style="color: white;">Codigo Postal</label> <br>
+          <input type="text" class="form-control" id="validationTooltip05" required>
+          <label for="validationTooltip05" style="color: white;">Diga su consulta</label> <br>
+      <textarea id="w3review" name="w3review" placeholder="consulta">
+         </textarea
+              >
+          <div class="invalid-tooltip">
+            Seleccione un codigo valido
+          </div>
+        </div>
+      </div> 
+      <button class="btn btn-warning bg-warning" type="submit">Enviar formulario</button>
+    </form>
+
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
